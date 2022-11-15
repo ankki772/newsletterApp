@@ -6,14 +6,12 @@ export default function Uploadimage(props) {
   const fileTypes = ['image/png', 'image/jpeg', 'image/PNG', 'image/JPEG'];
   const handleimgPreview = (e) => {
     let filesArr = Object.values(e.target.files);
-    console.log(filesArr);
     if (fileTypes.includes(filesArr[0].type)) {
       setUploadImage([...uploadImage, filesArr]);
     }
     else {
       alert('insert proper image extension .png , .jpeg');
     }
-
   }
 
   return (

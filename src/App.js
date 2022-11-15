@@ -4,6 +4,9 @@ import axios from 'axios'
 import './components/loader/loader.css'
 import { useState, useEffect } from 'react'
 import Editor from './editor/editor'
+import Signup from './Pages/signup'
+import Signin from './Pages/signin'
+
 export default function App() {
   const [loader, setLoader] = useState(false)
 
@@ -27,10 +30,12 @@ export default function App() {
   }, [])
 
 
-
-
   const routes = useRoutes([
-    { path: '/', element: <Editor /> }
+    { path: '/', element: <Editor /> },
+    { path: '/signup', element: <Signup />},
+    { path: '/signin', element: <Signin />
+
+   }
   ])
 
   return (<>
