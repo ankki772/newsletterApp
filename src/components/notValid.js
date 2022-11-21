@@ -11,7 +11,7 @@ export default function NotValid({ errInfo }) {
               width="13"
               height="13"
               fill="currentColor"
-              class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+              className="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
               viewBox="0 0 16 16"
               role="img"
               aria-label="Warning:"

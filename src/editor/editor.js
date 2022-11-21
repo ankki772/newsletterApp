@@ -3,8 +3,6 @@ import { Editor } from '@tinymce/tinymce-react';
 import { ToastContainer, toast } from 'react-toastify';
 import {} from 'downloadjs'
 import { saveAsPng } from 'save-html-as-image';
-
-
 import '../App.css'
 import '../components/imagesHover/imageHover.css'
 import { getOriginalTemplate } from '../services/getApi';
